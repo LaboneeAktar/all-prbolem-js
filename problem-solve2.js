@@ -214,3 +214,25 @@ const givenArray = [30, 40, 12, 34, 11, 7, 40, 70];
 const minimumValue = findMinimum(givenArray);
 console.log(minimumValue);
 */
+
+//...........Second Largest NUmber from Array.................
+/*
+function findSecondLargest(arr) {
+    let largest = 0,
+        secondLargest = 0
+
+    for (i of arr) {
+        if (i > largest) {
+            largest = i
+        }
+    }
+
+    for (j of arr) {
+        if (j > secondLargest && j < largest) {
+            secondLargest = j
+        }
+    }
+    return secondLargest;
+}
+console.log("Second Largest", findSecondLargest([1, 4, 2, 3, 0]));
+*/
